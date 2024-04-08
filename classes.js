@@ -55,6 +55,8 @@ class Developer extends Person {
   }
 
   showFullDescription() {
+    // super mi permette di chiamare metodi della super-classe (o istanza principale in questo caso)
+    // andando a comporre un messaggio più specifico sulla base di quello precedente
     return super.showName() + ": expert in " + this.specialty;
   }
 }
